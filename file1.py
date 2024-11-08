@@ -1,4 +1,7 @@
 def hello(name):
-    print(f"Hello {name}")
-hello("Sreeshma")
-hello("Sara")
+    return f"Hello {name}"
+print(hello("Sreeshma"))
+print(hello("Sara"))
+
+assert hello("abc") == "Hello abc"
+assert hello("abc") != "hello ABC"
